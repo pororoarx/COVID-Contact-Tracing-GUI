@@ -1,4 +1,6 @@
 # import all the required modules (csv, tkinter, mesagebox, re, font, etc.)
+import csv
+import tkinter
 
 # define the Create class
         # initiliaze main window 
