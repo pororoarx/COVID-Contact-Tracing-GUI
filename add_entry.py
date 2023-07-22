@@ -213,6 +213,9 @@ class Create:
                 if not re.match(r"^\d+$", contact):
                     raise ValueError("Invalid contact number.")
                 
+                # combine first, last and middle name into 1 full name
+
+                # create a dictionary for every new inputs for a new contact info
 
                 # open csv file to to save all inputs of user
 
