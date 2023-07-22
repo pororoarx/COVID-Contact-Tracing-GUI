@@ -10,6 +10,7 @@ class Read:
         self.main = main
 
     # define a function to search for a contact information
+    def search_contact(self):
         # create a new window for searching
 
         # set label for asked input and add field  
