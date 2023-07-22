@@ -29,6 +29,8 @@ class Read:
     # define a function to read the information from CSV file
     def contact_info_read(self):
         # take the entered input from the search widget
+        name = self.full_name_entry.get()
+        data = []
         # open csv file and store its value in data
         # create the list of all the names from the data
 
