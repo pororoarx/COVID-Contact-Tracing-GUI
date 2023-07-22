@@ -22,3 +22,7 @@ create_button.place(relx=0.5, rely=0.15, anchor=tkinter.CENTER)
 
 # call the main loop to start the app
 main.mainloop()
+
+
+
+# checks program if working...
