@@ -86,6 +86,9 @@ class Create:
         self.relationship_entry.grid(row=4, column=1)
 
         # Set the title for health declaration form entry
+        bold_font = font.Font(weight="bold", size=11)
+        name = tkinter.Label(window, text=" II. Health Declaration Form", font=bold_font)
+        name.grid(row=7, column=0, columnspan=3, sticky="w")
 
         # question 1 - vaccination
         # set radio button for q1
