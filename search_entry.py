@@ -23,8 +23,11 @@ class Read:
         self.full_name_entry.grid(row=1, column=4)
 
         # add the button to start search
+        search_button = tkinter.Button(window, text="Search", command=self.contact_info_read)
+        search_button.grid(row=2, column=4)
 
     # define a function to read the information from CSV file
+    def contact_info_read(self):
         # take the entered input from the search widget
         # open csv file and store its value in data
         # create the list of all the names from the data
