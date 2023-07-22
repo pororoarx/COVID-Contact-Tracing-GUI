@@ -1,7 +1,11 @@
 # import tkinter
+import tkinter
 # import entry functions (add and search)
 
 # main window
+main = tkinter.Tk()
+main.title("COVID Contact Tracing")
+main.geometry("400x300")
 
 # create the instance of a class for add entry
 # create the instance of a class for search entry
@@ -12,3 +16,4 @@
 # place the search entry in the middle
 
 # call the main loop to start the app
+main.mainloop()
