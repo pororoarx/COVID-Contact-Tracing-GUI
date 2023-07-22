@@ -136,6 +136,13 @@ class Create:
         question_4 = tkinter.Label(window, text="Have you been in contact with somebody who has symptoms in the last 14 days?")
         question_4.grid(row=19, column=0, columnspan=3, sticky="w")
         # set radio button for q4
+        self.contact_var = tkinter.StringVar()
+        self.contact_var.set("Not yet")  
+        # Default selection
+        in_contact = ["No", "Yes"]
+        for i, options in enumerate(in_contact):
+            radiobutton = tkinter.Radiobutton(window, text=options, variable=self.contact_var, value=options)
+            radiobutton.grid(row=20, column=0+i, columnspan=3, sticky="w")
 
         # question 5 - positive
         question_5 = tkinter.Label(window, text="Have you been tested positive for COVID-19?")
