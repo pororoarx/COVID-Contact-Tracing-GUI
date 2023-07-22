@@ -148,6 +148,12 @@ class Create:
         question_5 = tkinter.Label(window, text="Have you been tested positive for COVID-19?")
         question_5.grid(row=22, column=0, columnspan=3, sticky="w")
         # set radio button for q5
+        self.positive_var = tkinter.StringVar()
+        self.positive_var.set("Not yet")  # Default selection
+        positive_test = ["No", "Yes"]
+        for i, options in enumerate(positive_test):
+            radiobutton = tkinter.Radiobutton(window, text=options, variable=self.positive_var, value=options)
+            radiobutton.grid(row=23, column=0+i, columnspan=3, sticky="w")
 
         # question 6 - places
         question_6 = tkinter.Label(window, text="What places have you been (besides of your home) in the last 14 days?")
