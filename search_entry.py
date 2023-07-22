@@ -32,6 +32,10 @@ class Read:
         name = self.full_name_entry.get()
         data = []
         # open csv file and store its value in data
+        with open("file1.csv") as csvfile:
+            reader = csv.reader(csvfile)
+            for row in reader:
+                data.append(row)
         # create the list of all the names from the data
 
         # execute the following code if name exists in the list
