@@ -68,8 +68,22 @@ class Create:
 
         # if minor:
         # Add entry field for guardian's name 
+        guardian_name = tkinter.Label(window, text="Guardian's name:")
+        guardian_name.grid(row=3, column=2, sticky="e")
+        self.guardian_name_entry = tkinter.Entry(window)
+        self.guardian_name_entry.grid(row=3, column=3)
+
         # Add entry field for guardian's contact number
+        guardian_contact = tkinter.Label(window, text="Guardian's contact no.:")
+        guardian_contact.grid(row=3, column=4, sticky="e")
+        self.guardian_contact_entry = tkinter.Entry(window)
+        self.guardian_contact_entry.grid(row=3, column=5)
+
         # Add entry field for their relationship
+        relationship_name = tkinter.Label(window, text="Relationship:")
+        relationship_name.grid(row=4, column=0, sticky="e")
+        self.relationship_entry = tkinter.Entry(window)
+        self.relationship_entry.grid(row=4, column=1)
 
         # Set the title for health declaration form entry
 
