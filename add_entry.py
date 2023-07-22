@@ -172,9 +172,14 @@ class Create:
 
         I understand and agree that my personal data collected in this survey will be kept confidential and used solely for contact tracing. I acknowledge that my responses will be anonymized and reported in aggregate, ensuring that my individual identity remains protected. I trust that appropriate security measures will be implemented to safeguard my data and prevent unauthorized access. By participating in this survey, I voluntarily provide my consent to collection and usage of my information in this notice.
         """
-        
+
         # add a text box for the data privacy agreememt
+        data_privacy_text = tkinter.Text(window, width=80, height=5, wrap=tkinter.WORD)
+        data_privacy_text.insert(tkinter.END, data_privacy_message)
+        data_privacy_text.grid(row=26, column=0, columnspan=6)
         # set checkbutton for data privacy
+        data_privacy_agree = tkinter.Checkbutton(window, text="I agree to the terms and conditions of the data privacy notice", variable=self.data_privacy_agree)
+        data_privacy_agree.grid(row=27, column=0)
 
         # add the submit button 
         submit_button = tkinter.Button(window, text="Submit", command=self.contact_info)
