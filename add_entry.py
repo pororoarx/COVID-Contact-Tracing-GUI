@@ -214,8 +214,10 @@ class Create:
                     raise ValueError("Invalid contact number.")
                 
                 # combine first, last and middle name into 1 full name
+                full_name = f"{first_name} {middle_name} {last_name}"
 
                 # create a dictionary for every new inputs for a new contact info
+                contact_data = {"Name": full_name, "Age": age, "Address": address, "Email": email, "Contact Number": contact, "Guardian's Name": guardian_name, "Guardian's Contact No.": guardian_contact, "Relationship": relationship, "Vaccinated": question_1, "Symptoms": question_2, "Exposure": question_3, "In contact": question_4, "Positive": question_5, "Places": question_6}
 
                 # open csv file to to save all inputs of user
 
