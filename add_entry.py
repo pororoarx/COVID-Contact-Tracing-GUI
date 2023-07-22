@@ -2,6 +2,7 @@
 import csv
 import tkinter
 from tkinter import font
+from tkinter import messagebox
 
 # define the Create class
 class Create:
@@ -196,6 +197,8 @@ class Create:
         question_2 = [self.symptoms_var1.get(), self.symptoms_var2.get(), self.symptoms_var3.get(), self.symptoms_var4.get()]
 
         # add error message if required fields were not answered
+        if not first_name or not last_name or not middle_name or not age or not address or not email or not contact or not question_1 or not question_2 or not question_3 or not question_4 or not question_5:
+            messagebox.showerror("Error", "Please fill out all the required fields.")
 
             # add exception handling for age
             # handle errors like missing field for guardian's info if user is minor
