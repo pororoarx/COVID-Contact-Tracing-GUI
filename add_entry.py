@@ -106,6 +106,19 @@ class Create:
         question_2 = tkinter.Label(window, text="Are you experiencing any symptoms for the past 14 days? (Check all that apply. If none, leave it blank)")
         question_2.grid(row=12, column=0, columnspan=3, sticky="w")
         # set checkbutton for q2
+        self.symptoms_var1 = tkinter.BooleanVar()
+        self.symptoms_var2 = tkinter.BooleanVar()
+        self.symptoms_var3 = tkinter.BooleanVar()
+        self.symptoms_var4 = tkinter.BooleanVar()
+        self.symptoms_var1.set(False)
+        self.symptoms_var2.set(False)
+        self.symptoms_var3.set(False)
+        self.symptoms_var4.set(False)
+
+        symptoms_options = ["Fever", "Cough", "Sore throat", "Loss of taste/smell"]
+        for i, symptom in enumerate(symptoms_options):
+            checkbutton = tkinter.Checkbutton(window, text=symptom, variable=self.symptoms_var1 if i == 0 else self.symptoms_var2 if i == 1 else self.symptoms_var3 if i == 2 else self.symptoms_var4)
+            checkbutton.grid(row=13, column=0+i, columnspan=3, sticky="w")
 
         # question 3 - exposure
         question_3 = tkinter.Label(window, text="Have you had exposure to a probable or confirmed case of COVID-19 in the last 14 days?")
