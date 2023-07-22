@@ -168,6 +168,11 @@ class Create:
         data_privacy = tkinter.Label(window, text=" III. Data Privacy", font=bold_font)
         data_privacy.grid(row=25, column=0, columnspan=3, sticky="w")
 
+        data_privacy_message = """DATA PRIVACY ACT
+
+        I understand and agree that my personal data collected in this survey will be kept confidential and used solely for contact tracing. I acknowledge that my responses will be anonymized and reported in aggregate, ensuring that my individual identity remains protected. I trust that appropriate security measures will be implemented to safeguard my data and prevent unauthorized access. By participating in this survey, I voluntarily provide my consent to collection and usage of my information in this notice.
+        """
+        
         # add a text box for the data privacy agreememt
         # set checkbutton for data privacy
 
