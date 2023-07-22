@@ -47,8 +47,13 @@ class Create:
         age.grid(row=2, column=0, sticky="e")
         self.age_entry = tkinter.Entry(window)
         self.age_entry.grid(row=2, column=1)
-        
+
         # Add entry field for address
+        address = tkinter.Label(window, text="Address")
+        address.grid(row=2, column=2, sticky="e")
+        self.address_entry = tkinter.Entry(window)
+        self.address_entry.grid(row=2, column=3)
+        
         # Add entry field for email
         # Add entry field for contact
         # if minor:
