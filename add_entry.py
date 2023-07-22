@@ -252,3 +252,4 @@ class Create:
             messagebox.showerror("Error", "You must agree to the terms and conditions.")
 
         # close the window
+        self.window.destroy()
