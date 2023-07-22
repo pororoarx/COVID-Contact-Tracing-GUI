@@ -213,6 +213,13 @@ class Create:
 
                 # print a message every time a new user submit a file
 
+            except Exception as e:
+                if str(e) == "Invalid age":
+                    messagebox.showerror("Error", "Invalid age")
+                elif str(e) == "Missing information":
+                    messagebox.showerror("Error", "Missing information. Please fill out all the required fields.")
+
+
             
 
         # add error message if data privacy is not checked
