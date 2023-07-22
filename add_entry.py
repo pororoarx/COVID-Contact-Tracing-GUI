@@ -199,13 +199,19 @@ class Create:
         # add error message if required fields were not answered
         if not first_name or not last_name or not middle_name or not age or not address or not email or not contact or not question_1 or not question_2 or not question_3 or not question_4 or not question_5:
             messagebox.showerror("Error", "Please fill out all the required fields.")
-
+        else:
             # add exception handling for age
+            try:
+                age = int(age)
+                if age < 0 or age > 150:
+                    raise ValueError("Invalid age")
             # handle errors like missing field for guardian's info if user is minor
 
                 # open csv file to to save all inputs of user
 
                 # print a message every time a new user submit a file
+
+            
 
         # add error message if data privacy is not checked
 
