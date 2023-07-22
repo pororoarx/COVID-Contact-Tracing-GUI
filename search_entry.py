@@ -4,7 +4,10 @@ import tkinter
 from tkinter import messagebox
 
 # create a class for search entry
-    # set constructor for the class 
+class Read:
+    # set constructor for the class
+    def __init__(self, main):
+        self.main = main
 
     # define a function to search for a contact information
         # create a new window for searching
