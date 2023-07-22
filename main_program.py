@@ -15,6 +15,8 @@ instance_create = Create(main)
 # create a button for the add entry
 create_button = tkinter.Button(main, text="Add entry", command=instance_create.create_contact, width=10, height=1, font=("Times New Roman", 12),bg="#87CEEB")
 # place the add entry button in the middle
+create_button.place(relx=0.5, rely=0.15, anchor=tkinter.CENTER)
+
 # create a button for the search entry
 # place the search entry in the middle
 
