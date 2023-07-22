@@ -53,8 +53,13 @@ class Create:
         address.grid(row=2, column=2, sticky="e")
         self.address_entry = tkinter.Entry(window)
         self.address_entry.grid(row=2, column=3)
-        
+
         # Add entry field for email
+        email = tkinter.Label(window, text="Email")
+        email.grid(row=2, column=4, sticky="e")
+        self.email_entry = tkinter.Entry(window)
+        self.email_entry.grid(row=2, column=5)
+
         # Add entry field for contact
         # if minor:
         # Add entry field for guardian's name 
