@@ -51,6 +51,8 @@ class Read:
 
                     # set labels for every contact information
                     # name
+                    name = tkinter.Label(display_info, text="Full Name: " + str(data[x][0]))
+                    name.pack(anchor='w')
                     # age
                     # address
                     # email
