@@ -25,13 +25,29 @@ class Create:
         name.grid(row=0, column=0, columnspan=3, sticky="w")
 
         # Add entry field for first name
+        first_name = tkinter.Label(window, text="First Name")
+        first_name.grid(row=1, column=0, sticky="e")
+        self.first_name_entry = tkinter.Entry(window)
+        self.first_name_entry.grid(row=1, column=1)
+
         # Add entry field for last name
+        last_name = tkinter.Label(window, text="Last Name")
+        last_name.grid(row=1, column=2, sticky="e")
+        self.last_name_entry = tkinter.Entry(window)
+        self.last_name_entry.grid(row=1, column=3)
+
         # Add entry field for middle name
+        middle_name = tkinter.Label(window, text="Middle Name")
+        middle_name.grid(row=1, column=4, sticky="e")
+        self.middle_name_entry = tkinter.Entry(window)
+        self.middle_name_entry.grid(row=1, column=5)
+
         # Add entry field for age
         age = tkinter.Label(window, text="Age")
         age.grid(row=2, column=0, sticky="e")
         self.age_entry = tkinter.Entry(window)
         self.age_entry.grid(row=2, column=1)
+        
         # Add entry field for address
         # Add entry field for email
         # Add entry field for contact
