@@ -106,8 +106,11 @@ class Create:
         # set checkbutton for data privacy
 
         # add the submit button 
+        submit_button = tkinter.Button(window, text="Submit", command=self.contact_info)
+        submit_button.grid(row=28, column=2)
 
         # save the window ref
+        self.window = window
 
 
     # define a function for contact infos
