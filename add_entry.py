@@ -94,6 +94,13 @@ class Create:
         question_1 = tkinter.Label(window, text="Have you been vaccinated for COVID-19?")
         question_1.grid(row=8, column=0, sticky="w")
         # set radio button for q1
+        self.vaccination_var = tkinter.StringVar()
+        # default selection
+        self.vaccination_var.set("Not yet")  
+        vaccinations = ["Not yet", "1st dose", "2nd Dose"]
+        for i, vaccination in enumerate(vaccinations):
+            radiobutton = tkinter.Radiobutton(window, text=vaccination, variable=self.vaccination_var, value=vaccination)
+            radiobutton.grid(row=9, column=0+i, columnspan=3, sticky="w")
 
         # question 2 - symptoms
         question_2 = tkinter.Label(window, text="Are you experiencing any symptoms for the past 14 days? (Check all that apply. If none, leave it blank)")
