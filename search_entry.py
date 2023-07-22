@@ -37,6 +37,7 @@ class Read:
             for row in reader:
                 data.append(row)
         # create the list of all the names from the data
+        list_info = [x[0] for x in data]
 
         # execute the following code if name exists in the list
             # if name is available, display the information
