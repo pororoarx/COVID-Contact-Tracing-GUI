@@ -3,8 +3,13 @@ import csv
 import tkinter
 
 # define the Create class
+class Create:
+    def __init__(self, main):
         # initiliaze main window 
+        self.main = main
         # BooleanVar for data privacy agreement
+        self.data_privacy_agree = tkinter.BooleanVar()
+        self.data_privacy_agree.set(False)
 
     # define the function for add entry
         # new window for add entry
