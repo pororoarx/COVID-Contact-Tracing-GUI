@@ -220,6 +220,9 @@ class Create:
                 contact_data = {"Name": full_name, "Age": age, "Address": address, "Email": email, "Contact Number": contact, "Guardian's Name": guardian_name, "Guardian's Contact No.": guardian_contact, "Relationship": relationship, "Vaccinated": question_1, "Symptoms": question_2, "Exposure": question_3, "In contact": question_4, "Positive": question_5, "Places": question_6}
 
                 # open csv file to to save all inputs of user
+                with open("file1.csv", "a", newline="") as file:
+                    file_writer = csv.writer(file)
+                    file_writer.writerow(contact_data.values())
 
                 # print a message every time a new user submit a file
 
