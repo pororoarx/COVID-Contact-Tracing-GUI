@@ -1,6 +1,7 @@
 # import all the required modules (csv, tkinter, mesagebox, re, font, etc.)
 import csv
 import tkinter
+from tkinter import font
 
 # define the Create class
 class Create:
@@ -19,6 +20,9 @@ class Create:
         window.geometry("1000x600")
 
         # Set the title for personal information entry
+        bold_font = font.Font(weight="bold", size=11)
+        name = tkinter.Label(window, text=" I. Personal Information", font=bold_font)
+        name.grid(row=0, column=0, columnspan=3, sticky="w")
 
         # Add entry field for first name
         # Add entry field for last name
