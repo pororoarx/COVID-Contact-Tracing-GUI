@@ -165,6 +165,8 @@ class Create:
         self.question_6_entry.grid(row=24, column=1)
 
         # Set the title for data privacy section
+        data_privacy = tkinter.Label(window, text=" III. Data Privacy", font=bold_font)
+        data_privacy.grid(row=25, column=0, columnspan=3, sticky="w")
 
         # add a text box for the data privacy agreememt
         # set checkbutton for data privacy
