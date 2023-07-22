@@ -9,6 +9,7 @@ main.title("COVID Contact Tracing")
 main.geometry("400x300")
 
 # create the instance of a class for add entry
+instance_create = Create(main)
 # create the instance of a class for search entry
 
 # create a button for the add entry
