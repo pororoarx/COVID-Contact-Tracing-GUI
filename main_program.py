@@ -1,6 +1,7 @@
 # import tkinter
 import tkinter
 # import entry functions (add and search)
+from add_entry import Create
 
 # main window
 main = tkinter.Tk()
