@@ -210,6 +210,8 @@ class Create:
                 if age < 18 and (not guardian_name or not guardian_contact or not relationship):
                     raise ValueError("Missing information")
                 # handle contact number error
+                if not re.match(r"^\d+$", contact):
+                    raise ValueError("Invalid contact number.")
                 
 
                 # open csv file to to save all inputs of user
@@ -221,9 +223,8 @@ class Create:
                     messagebox.showerror("Error", "Invalid age")
                 elif str(e) == "Missing information":
                     messagebox.showerror("Error", "Missing information. Please fill out all the required fields.")
-
-
-            
+                elif str(e) == "Invalid contact number.":
+                    messagebox.showerror("Error", e)
 
         # add error message if data privacy is not checked
 
