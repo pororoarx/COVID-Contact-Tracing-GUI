@@ -248,7 +248,7 @@ class Create:
                     messagebox.showerror("Error", e)
 
         # add error message if data privacy is not checked
+        if not self.data_privacy_agree.get():
+            messagebox.showerror("Error", "You must agree to the terms and conditions.")
 
         # close the window
-
-
