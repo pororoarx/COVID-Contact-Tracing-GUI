@@ -91,17 +91,36 @@ class Create:
         name.grid(row=7, column=0, columnspan=3, sticky="w")
 
         # question 1 - vaccination
+        question_1 = tkinter.Label(window, text="Have you been vaccinated for COVID-19?")
+        question_1.grid(row=8, column=0, sticky="w")
         # set radio button for q1
+
         # question 2 - symptoms
+        question_2 = tkinter.Label(window, text="Are you experiencing any symptoms for the past 14 days? (Check all that apply. If none, leave it blank)")
+        question_2.grid(row=12, column=0, columnspan=3, sticky="w")
         # set checkbutton for q2
+
         # question 3 - exposure
+        question_3 = tkinter.Label(window, text="Have you had exposure to a probable or confirmed case of COVID-19 in the last 14 days?")
+        question_3.grid(row=16, column=0, columnspan=3, sticky="w")
         # set radio button for q3
+
         # question 4 - contact
+        question_4 = tkinter.Label(window, text="Have you been in contact with somebody who has symptoms in the last 14 days?")
+        question_4.grid(row=19, column=0, columnspan=3, sticky="w")
         # set radio button for q4
+
         # question 5 - positive
+        question_5 = tkinter.Label(window, text="Have you been tested positive for COVID-19?")
+        question_5.grid(row=22, column=0, columnspan=3, sticky="w")
         # set radio button for q5
+
         # question 6 - places
+        question_6 = tkinter.Label(window, text="What places have you been (besides of your home) in the last 14 days?")
         # Add entry field for places q6
+        question_6.grid(row=24, column=0, sticky="e")
+        self.question_6_entry = tkinter.Entry(window)
+        self.question_6_entry.grid(row=24, column=1)
 
         # Set the title for data privacy section
 
