@@ -40,6 +40,7 @@ class Read:
         list_info = [x[0] for x in data]
 
         # execute the following code if name exists in the list
+        if name in list_info:
             # if name is available, display the information
                     # create a mew window for the information of searched user
 
