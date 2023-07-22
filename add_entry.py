@@ -61,6 +61,11 @@ class Create:
         self.email_entry.grid(row=2, column=5)
 
         # Add entry field for contact
+        contact = tkinter.Label(window, text="Contact No.:")
+        contact.grid(row=3, column=0, sticky="e")
+        self.contact_entry = tkinter.Entry(window)
+        self.contact_entry.grid(row=3, column=1)
+
         # if minor:
         # Add entry field for guardian's name 
         # Add entry field for guardian's contact number
