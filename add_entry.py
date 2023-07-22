@@ -206,6 +206,8 @@ class Create:
                 if age < 0 or age > 150:
                     raise ValueError("Invalid age")
             # handle errors like missing field for guardian's info if user is minor
+                if age < 18 and (not guardian_name or not guardian_contact or not relationship):
+                    raise ValueError("Missing information")
 
                 # open csv file to to save all inputs of user
 
