@@ -12,6 +12,9 @@ class Read:
     # define a function to search for a contact information
     def search_contact(self):
         # create a new window for searching
+        window = tkinter.Toplevel(self.main)
+        window.title("Search Contact")
+        window.geometry("150x150")
 
         # set label for asked input and add field  
 
