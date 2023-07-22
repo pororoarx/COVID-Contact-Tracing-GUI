@@ -13,7 +13,10 @@ class Create:
 
     # define the function for add entry
     def create_contact(self):
+        window = tkinter.Toplevel(self.main)
         # new window for add entry
+        window.title("Add a new contact")
+        window.geometry("1000x600")
 
         # Set the title for personal information entry
 
