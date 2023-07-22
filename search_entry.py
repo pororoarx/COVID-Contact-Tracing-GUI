@@ -42,7 +42,12 @@ class Read:
         # execute the following code if name exists in the list
         if name in list_info:
             # if name is available, display the information
+            for x in range(0, len(data)):
+                if name == data[x][0]:
                     # create a mew window for the information of searched user
+                    display_info = tkinter.Toplevel(self.main)
+                    display_info.title("Information")
+                    display_info.geometry("500x300")
 
                     # set labels for every contact information
                     # name
