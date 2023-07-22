@@ -114,6 +114,7 @@ class Create:
 
 
     # define a function for contact infos
+    def contact_info(self):
         # collect all inputs of user in every field
 
         # add error message if required fields were not answered
