@@ -116,6 +116,16 @@ class Create:
     # define a function for contact infos
     def contact_info(self):
         # collect all inputs of user in every field
+        first_name = self.first_name_entry.get()
+        last_name = self.last_name_entry.get()
+        middle_name = self.middle_name_entry.get()
+        age = self.age_entry.get()
+        address = self.address_entry.get()
+        email = self.email_entry.get()
+        contact = self.contact_entry.get()
+        guardian_name = self.guardian_name_entry.get()
+        guardian_contact = self.guardian_contact_entry.get()
+        relationship = self.relationship_entry.get()
 
         # add error message if required fields were not answered
 
