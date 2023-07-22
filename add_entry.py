@@ -188,6 +188,12 @@ class Create:
         guardian_name = self.guardian_name_entry.get()
         guardian_contact = self.guardian_contact_entry.get()
         relationship = self.relationship_entry.get()
+        question_1 = self.vaccination_var.get()
+        question_3 = self.exposure_var.get()
+        question_4 = self.contact_var.get()
+        question_5 = self.positive_var.get()
+        question_6 = self.question_6_entry.get()
+        question_2 = [self.symptoms_var1.get(), self.symptoms_var2.get(), self.symptoms_var3.get(), self.symptoms_var4.get()]
 
         # add error message if required fields were not answered
 
