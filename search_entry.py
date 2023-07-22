@@ -17,6 +17,10 @@ class Read:
         window.geometry("150x150")
 
         # set label for asked input and add field  
+        full_name = tkinter.Label(window, text="Enter full name")
+        full_name.grid(row=0, column=4, padx=20)
+        self.full_name_entry = tkinter.Entry(window)
+        self.full_name_entry.grid(row=1, column=4)
 
         # add the button to start search
 
