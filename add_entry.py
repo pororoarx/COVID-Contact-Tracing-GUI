@@ -12,6 +12,7 @@ class Create:
         self.data_privacy_agree.set(False)
 
     # define the function for add entry
+    def create_contact(self):
         # new window for add entry
 
         # Set the title for personal information entry
