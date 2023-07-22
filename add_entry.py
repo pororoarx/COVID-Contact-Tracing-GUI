@@ -28,6 +28,10 @@ class Create:
         # Add entry field for last name
         # Add entry field for middle name
         # Add entry field for age
+        age = tkinter.Label(window, text="Age")
+        age.grid(row=2, column=0, sticky="e")
+        self.age_entry = tkinter.Entry(window)
+        self.age_entry.grid(row=2, column=1)
         # Add entry field for address
         # Add entry field for email
         # Add entry field for contact
