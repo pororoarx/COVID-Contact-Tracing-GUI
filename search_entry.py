@@ -29,21 +29,22 @@ class Read:
     # define a function to read the information from CSV file
     def contact_info_read(self):
         # take the entered input from the search widget
-        name = self.full_name_entry.get()
+        name = self.full_name_entry.get().lower()
         data = []
         # open csv file and store its value in data
-        with open("file1.csv") as csvfile:
+        with open("COVID_info.csv") as csvfile:
             reader = csv.reader(csvfile)
             for row in reader:
                 data.append(row)
+
         # create the list of all the names from the data
-        list_info = [x[0] for x in data]
+        list_info = [x[0].lower() for x in data if x]
 
         # execute the following code if name exists in the list
         if name in list_info:
             # if name is available, display the information
             for x in range(0, len(data)):
-                if name == data[x][0]:
+                if data[x] and name == data[x][0].lower():
                     # create a mew window for the information of searched user
                     display_info = tkinter.Toplevel(self.main)
                     display_info.title("Information")
@@ -95,7 +96,6 @@ class Read:
                     print(data[x][0])
 
             # if the name is not found, display error message
-
         else:
             # if the name is not found, display error message
             messagebox.showerror("Error", "Data not found")
