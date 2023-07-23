@@ -12,6 +12,7 @@ main.geometry("400x300")
 # create the instance of a class for add entry
 instance_create = Create(main)
 # create the instance of a class for search entry
+instance_search = Read(main)
 
 # create a button for the add entry
 create_button = tkinter.Button(main, text="Add entry", command=instance_create.create_contact, width=10, height=1, font=("Times New Roman", 12),bg="#87CEEB")
