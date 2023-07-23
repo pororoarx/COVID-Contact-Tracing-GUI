@@ -1,3 +1,7 @@
 name,age,address,gmail,contact,guardian_name,guardian_contact,relationship,question_1,question_2,question_3,question_4,question_5,question_6
 
-ken garrido legaspi,19,virac,ken@gmail.com,097987969688,,,,2nd Dose,"[False, False, False, False]",No,No,No,None
+Ken Garrido Legaspi,19,virac,ken@gmail.com,097987969688,,,,2nd Dose,"[False, False, False, False]",No,No,No,None
+Malene Garrido Dizon,23,Quezon,malene@gmail.com,09778877887,,,,2nd Dose,"[False, True, False, False]",No,Yes,No,None
+Manuel Romulo Rodulfo,17,"Sampaloc, Manila",manuel@gmail.com,09123445677,Jose Rodulfo,09123243434,Father,2nd Dose,"[False, True, False, False]",Not sure,No,No,SM North
+Jhonder Sta Ines,17,"Sta Mesa, Manila",jhonder@gmail.com,0912564677,Juan Sta Ines,09125435434,Father,2nd Dose,"[False, True, False, False]",Not sure,No,No,SM MOA
+Ron Tatel Madrigal,29,Viga,ronkevin@gmail.com,09734243688,,,,2nd Dose,"[True, False, False, False]",No,No,No,Sorsogon
