@@ -2,6 +2,7 @@
 import tkinter
 # import entry functions (add and search)
 from add_entry import Create
+from search_entry import Read
 
 # main window
 main = tkinter.Tk()
