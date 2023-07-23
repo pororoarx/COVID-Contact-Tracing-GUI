@@ -96,5 +96,10 @@ class Read:
 
             # if the name is not found, display error message
 
+        else:
+            # if the name is not found, display error message
+            messagebox.showerror("Error", "Data not found")
+            print("Not available")
+            
 
   
