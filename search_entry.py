@@ -33,6 +33,12 @@ class Read:
     def contact_info_read(self):
         # take the entered input from the search widget
         name = self.full_name_entry.get().lower()
+
+        # handle error if user entered submit with unfilled info
+        if not name.strip():
+            messagebox.showerror("Error", "Please enter a name")
+            return
+
         data = []
         # open csv file and store its value in data
         with open("COVID_info.csv") as csvfile:
